@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="file"],
+        input[type="radio"],
+        input[type="range"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        div.skills input[type="range"] {
+            width: 80%;
+        }
+
+        div.skills input[type="range"]::-webkit-slider-thumb {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <form>
+        <H3>CANDIDATE INFORMATION </H3>
+        
+        <label> Enter your College Name :</label>
+        <input type="text" id ="name" placeholder="Enter your College name" required  ><br><br>
+        <label> Email ID: </label>
+        <input type="text" id="email id" placeholder="Email ID" required><br><br>
+        <label> Name: </label>
+        <input type="text" name="name" placeholder="Enter your name" required><br><br>
+        <label>  Branch:</label>
+        <input type="text" name="name" placeholder="Enter your Branch" required><br><br>
+        <label> Enter your USN:</label>
+        <input type="text" name="name" placeholder="1HK19CS047" required><br><br>
+        <label> Semester:</label>
+        <input type="text" name="name" placeholder="Enter your Semester" required><br><br>
+        <label> Date of Birth:</label>
+        <input type="date" placeholder="Enter your Date of Birth" required><br><br>
+        <label> Gender:</label>
+        <input  type="text" name="gender" placeholder="Enter your Gender" required><br><br>
+        <label>CGPA till Last Semester:</label>
+        <input type="decimal"  placeholder="9.0" required><br><br>
+
+        <label>MARKS  OBTAINED IN 10TH STANDARD </label>
+        <input type="number"Name="marks" placeholder="%" required><br><br>
+
+        <label> MARKS OBTAINED IN 12TH STANDARD </label>
+        <input type="number" name="marks" placeholder="%" required><br><br>
+
+        <label> CGPA OBATAINED IN GRADUATION </label>
+        <input type="number" name="marks"   placeholder="CGPA" required><br><br>
+
+        <DIV>
+        <label><h4> Available Documnets</h4> </label>
+        10TH MARKSHEET:<input type="checkbox"><BR><BR>
+        12TH MARKSHEET: <input  type="checkbox"><BR><BR>
+        PROVISIONAL DEGREE CERTIFICATES:<input type="checkbox"><BR><BR>
+        </DIV>
+        <DIV>
+        <h4> Position Applying for </h4>
+        <label> Asscociate Software Engineer </label>
+        <input  type="radio" name="position" placeholder="selected Position" required><br><br>
+        <label>Software Engineer Trainee</label>
+        <input type="radio" name="  Position" placeholder="selected Position" required><br><br>
+        <label> Full Stack Developer in Java </label>
+        <input  type="radio" name=" Position" placeholder="selected Position" required><br><br>
+        <label>MERN Stack</label>
+        <input type="radio" name=" Position" placeholder="selected Position" required>
+        </DIV>
+
+    <div> 
+        <h4> SKILLS KNOWN </h4>
+        C++:<input type="range" required><BR></BR>
+        HTML:<input type="range" required><BR><BR>
+        CSS:<input type="range" required><BR><BR>
+        JAVASCRIPT:<input type="range" required><BR><BR>
+        DATA STRUCTURE:<input type="range" required><BR><BR>    
+        </div>
+    
+    <DIV> 
+        <h4> Upload your Resume </h4>
+        <input type="file" name="CV/Resume" placeholder="Upload PDF /DOCTYPE" required ><br><br>
+    </DIV>
+    <DIV>
+        <H4> Upload Your Profile Picture</H4>
+        <input type="file" name="Profile Picture" placeholder="Size =50kb" required><br><br>
+    </DIV>
+
+    <DIV> 
+        <H4> Upload Recent Semester Marks Card</H4>
+        <input type="file"name="Latest Semester Result" placeholder="Upload PDF/DOCTYPE" required><br><br>
+    </DIV>
+        Suggestion  <input type="box " height="200PX " width="200 PX "><br><br>
+        
+        <input type="submit" name=" Submit" value="Submit" required><br><br>
+
+    </form>
+</body>
+</html>
